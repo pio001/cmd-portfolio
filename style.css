@@ -1,0 +1,100 @@
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #0f0;
+  font-family: 'Consolas', 'Courier New', monospace;
+  margin: 0;
+}
+
+.cmd-container {
+  position: relative;
+  background-color: #000;
+  color: #0f0;
+  width: 90%;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  resize: both;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmd-header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right{
+  display: flex;
+  align-items: center;
+}
+.cmd-button {
+  background: transparent;
+  border: none;
+  color: #0f0;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 10px;
+  outline: none;
+}
+
+.cmd-button:hover {
+  color: #fff;
+}
+.output{
+  line-height: 0.01;
+  margin-top: -120px;
+}
+.cmd-style {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.cmd-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #0f0;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  caret-color: #0f0;
+  
+}
+/* Set default placeholder color variable */
+.cmd-input {
+  --placeholder-color:#0f0 ; /* Default placeholder color */
+}
+
+/* Apply the placeholder color variable */
+.cmd-input::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1; /* Ensure the color appears fully */
+}
+
+
+.minimized {
+  height: 30px; /* Only shows header when minimized */
+}
+
+.maximized {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+}

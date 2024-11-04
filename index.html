@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMD-Inspired Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cmd-container" id="cmd-container">
+    <div class="cmd-header">
+      <div class="left">
+        <img src="./cmd.png" alt="Icon" class="cmd-icon" width="30px" height="30px"> <!-- Add your icon here -->
+        <div class="cmd-button">C:\Windows\System32\cmd.exe</div>
+      </div>
+     <div class="right">
+      <button class="cmd-button minimize" onclick="minimizeWindow()">-</button>
+      <button class="cmd-button maximize" onclick="toggleMaximizeWindow()">[]</button>
+      <button class="cmd-button close" onclick="closeWindow()">X</button>
+     </div>
+    </div>
+    <div class="cmd-style">
+      <div id="output">
+        <div class="output">
+          <p>Prosper Oforah Portfolio [Version 002.00.00]</p>
+          <p>(C) Propiosper Web Services.All rights reserved.@2024</p>
+          <p>C:\Users\User\Desktop\cmd-portfolio>code .</p>
+          <p>Welcome to Prosper Oforah Portfolio!</p>
+          <p>Type <span class="cmd-text">"help"</span> for a list of commands</p>
+
+        </div>
+      </div>
+      <input type="text" id="cmd-input" class=" cmd-input" placeholder="Type a command..." autofocus>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
